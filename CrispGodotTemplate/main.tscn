@@ -62,9 +62,9 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("2_ntvbt")
-altColor = Color(0.813408, 0.310944, 0.371109, 1)
-titleText = "main menu"
-descriptionText = "description text goes here yup"
+thumbnailTexture = ExtResource("1_mj5ko")
+titleText = "Game"
+descriptionText = "Gaming is awesome"
 
 [node name="BackgroundPanel" type="Panel" parent="MainMenuUI"]
 layout_mode = 1
@@ -96,14 +96,15 @@ self_modulate = Color(0, 0, 0, 1)
 layout_mode = 2
 theme = ExtResource("1_60ktn")
 bbcode_enabled = true
-text = "[center]main menu"
+text = "[center]Game"
 fit_content = true
 
 [node name="MarginContainer" type="MarginContainer" parent="MainMenuUI/BackgroundPanel/MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="TextureRect" type="TextureRect" parent="MainMenuUI/BackgroundPanel/MarginContainer/VBoxContainer/MarginContainer"]
+[node name="Thumbnail" type="TextureRect" parent="MainMenuUI/BackgroundPanel/MarginContainer/VBoxContainer/MarginContainer"]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
 texture = ExtResource("1_mj5ko")
@@ -117,15 +118,23 @@ size_flags_vertical = 3
 theme = ExtResource("1_60ktn")
 theme_override_font_sizes/normal_font_size = 48
 bbcode_enabled = true
-text = "description text goes here yup"
+text = "Gaming is awesome"
 fit_content = true
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="HighScore" type="RichTextLabel" parent="MainMenuUI/BackgroundPanel/MarginContainer/VBoxContainer"]
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 2
+theme = ExtResource("1_60ktn")
+theme_override_font_sizes/normal_font_size = 48
+bbcode_enabled = true
+fit_content = true
+
+[node name="TransitionLayer" type="CanvasLayer" parent="."]
 layer = 128
 
-[node name="TransitionRect" type="ColorRect" parent="CanvasLayer"]
+[node name="TransitionRect" type="ColorRect" parent="TransitionLayer"]
 unique_name_in_owner = true
-self_modulate = Color(0.813408, 0.310944, 0.371109, 1)
+self_modulate = Color(0, 0, 0, 1)
 material = SubResource("ShaderMaterial_ntvbt")
 anchors_preset = 15
 anchor_right = 1.0
@@ -133,7 +142,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="TransitionPlayer" type="AnimationPlayer" parent="CanvasLayer/TransitionRect"]
+[node name="TransitionPlayer" type="AnimationPlayer" parent="TransitionLayer/TransitionRect"]
 unique_name_in_owner = true
 libraries = {
 &"": SubResource("AnimationLibrary_ntvbt")
