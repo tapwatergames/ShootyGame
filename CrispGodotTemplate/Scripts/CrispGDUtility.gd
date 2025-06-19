@@ -7,6 +7,9 @@ enum game_state {
 	TRANSITIONING,
 }
 
+signal game_started
+signal game_ended
+
 var _current_state = game_state.INACTIVE
 var _game : Node = null
 
@@ -29,6 +32,7 @@ func start_game()->void:
 		get_tree().current_scene.add_child(inst)
 		_game = inst
 		_current_state=game_state.ACTIVE
+		game_started.emit()
 		CrispGDUI.instance.set_menu_visibility(false)
 		
 		CrispGDUI.instance.transition_back()
@@ -45,11 +49,10 @@ func end_game()->void:
 		CrispGDUI.instance.transition_to_dark()
 		await get_tree().create_timer(1.1).timeout
 		_current_state=game_state.INACTIVE
+		game_ended.emit()
 		_game.queue_free()
 		_game=null
 		CrispGDUI.instance.visible=true
 		CrispGDUI.instance.transition_back()
 	else:
 		push_error("Game scene is already inactive")
-		
-		
