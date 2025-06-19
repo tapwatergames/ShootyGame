@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bl7naxksfdnge"]
+
+[ext_resource type="Script" uid="uid://b1m6ir72f4rpa" path="res://CrispGodotTemplate/Scripts/CrispGDUtility.gd" id="1_433dc"]
+
+[node name="CrispGDUtility" type="Node"]
+script = ExtResource("1_433dc")

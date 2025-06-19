@@ -1,0 +1,6 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://67sarbvt2d7a"]
+
+[ext_resource type="Shader" uid="uid://b6o1rpc3cx06a" path="res://CrispGodotTemplate/Shaders/DiamondTransition.gdshader" id="1_6svl3"]
+
+[resource]
+shader = ExtResource("1_6svl3")
