@@ -1,0 +1,18 @@
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://c5xxh0kbds40"]
+
+[ext_resource type="FontFile" uid="uid://dwfmkwo43rigt" path="res://CrispGodotTemplate/Resources/LeagueSpartan-VF.ttf" id="1_6f1eb"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mj5ko"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+
+[resource]
+default_font = ExtResource("1_6f1eb")
+Panel/styles/panel = SubResource("StyleBoxFlat_mj5ko")
+RichTextLabel/colors/default_color = Color(1, 1, 1, 1)
+RichTextLabel/font_sizes/bold_font_size = 86
+RichTextLabel/font_sizes/normal_font_size = 86
+RichTextLabel/fonts/normal_font = ExtResource("1_6f1eb")

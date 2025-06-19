@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://cylpimnbxhptk"]
 
-[ext_resource type="Theme" uid="uid://c5xxh0kbds40" path="res://CrispGodotTemplate/theme.tres" id="1_60ktn"]
+[ext_resource type="Theme" uid="uid://c5xxh0kbds40" path="res://CrispGodotTemplate/Resources/theme.tres" id="1_60ktn"]
 [ext_resource type="Script" uid="uid://6fmje8c3cib3" path="res://CrispGodotTemplate/main.gd" id="1_im8vk"]
 [ext_resource type="Texture2D" uid="uid://dt575afej668f" path="res://icon.svg" id="1_mj5ko"]
 
@@ -12,6 +12,8 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_im8vk")
+titleText = "Game Title"
+descriptionText = "sample game description for a game hurray"
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
@@ -39,8 +41,12 @@ layout_mode = 2
 
 [node name="Title" type="RichTextLabel" parent="Panel/MarginContainer/VBoxContainer"]
 unique_name_in_owner = true
+self_modulate = Color(0, 0, 0, 1)
 layout_mode = 2
-size_flags_vertical = 3
+theme = ExtResource("1_60ktn")
+bbcode_enabled = true
+text = "[center]Game Title"
+fit_content = true
 
 [node name="MarginContainer" type="MarginContainer" parent="Panel/MarginContainer/VBoxContainer"]
 layout_mode = 2
@@ -50,7 +56,15 @@ size_flags_vertical = 3
 layout_mode = 2
 size_flags_vertical = 3
 texture = ExtResource("1_mj5ko")
+stretch_mode = 5
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Panel/MarginContainer/VBoxContainer"]
+[node name="GameDescription" type="RichTextLabel" parent="Panel/MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+self_modulate = Color(0, 0, 0, 1)
 layout_mode = 2
 size_flags_vertical = 3
+theme = ExtResource("1_60ktn")
+theme_override_font_sizes/normal_font_size = 48
+bbcode_enabled = true
+text = "sample game description for a game hurray"
+fit_content = true
