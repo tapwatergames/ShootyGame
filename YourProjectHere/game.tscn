@@ -9,24 +9,28 @@ data = PackedByteArray("gIKRn6y4w87Y4Ojw9vsBBgsQFRofJCkuMzg9QkdGQTw3Mi0oIx4ZFA8K
 [node name="Game" type="Node"]
 script = ExtResource("1_kyyvw")
 
-[node name="SfxrStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="SoundEffectsArray" type="Node" parent="."]
+
+[node name="SfxrStreamPlayer" type="AudioStreamPlayer" parent="SoundEffectsArray"]
 stream = SubResource("AudioStreamWAV_6y0n8")
+
+[node name="SfxrStreamPlayer2" type="AudioStreamPlayer" parent="SoundEffectsArray"]
 script = ExtResource("2_48uk2")
 wave/type = 1
 sample_params/sound_vol = 0.25
 sample_params/sample_rate = 44100.0
 envelope/attack_time = 0.0
-envelope/sustain_time = 0.0113946
-envelope/punch_time = 0.508909
-envelope/decay_time = 0.229828
-frequency/start_frequency = 0.462964
+envelope/sustain_time = 0.6641
+envelope/punch_time = 0.0
+envelope/decay_time = 0.0
+frequency/start_frequency = 0.351734
 frequency/min_freq_cutoff = 0.0
 frequency/slide = 0.0
 frequency/delta_slide = 0.0
 vibrato/depth = 0.0
 vibrato/speed = 0.0
-arpeggiation/frequency_mult = 0.53369
-arpeggiation/change_speed = 0.603477
+arpeggiation/frequency_mult = 0.0
+arpeggiation/change_speed = 0.0
 duty_cycle/duty_cycle = 0.0
 duty_cycle/sweep = 0.0
 retrigger/rate = 0.0

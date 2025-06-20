@@ -57,4 +57,9 @@ func end_game()->void:
 	else:
 		push_error("Game scene is already inactive")
 		
-		
+
+func play_sound_effect(sfx: AudioStreamPlayer)->void:
+	var to_play :AudioStreamPlayer = sfx.duplicate()
+	to_play.play()
+	await to_play.finished
+	to_play.queue_free()
