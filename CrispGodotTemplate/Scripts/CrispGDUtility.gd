@@ -56,3 +56,5 @@ func end_game()->void:
 		CrispGDUI.instance.transition_back()
 	else:
 		push_error("Game scene is already inactive")
+		
+		
