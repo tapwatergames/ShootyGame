@@ -1,10 +1,9 @@
-[gd_scene load_steps=12 format=3 uid="uid://cylpimnbxhptk"]
+[gd_scene load_steps=11 format=3 uid="uid://cylpimnbxhptk"]
 
 [ext_resource type="Theme" uid="uid://c5xxh0kbds40" path="res://CrispGodotTemplate/Resources/theme.tres" id="1_60ktn"]
 [ext_resource type="Script" uid="uid://dek4apm2m57jm" path="res://CrispGodotTemplate/main.gd" id="1_im8vk"]
 [ext_resource type="Texture2D" uid="uid://dt575afej668f" path="res://icon.svg" id="1_mj5ko"]
 [ext_resource type="Script" uid="uid://6fmje8c3cib3" path="res://CrispGodotTemplate/mainMenu.gd" id="2_ntvbt"]
-[ext_resource type="AudioStream" uid="uid://0n0wscjkytmu" path="res://Ill snap your neck like a  twig.mp3" id="2_pe8a6"]
 [ext_resource type="Shader" uid="uid://b6o1rpc3cx06a" path="res://CrispGodotTemplate/Shaders/DiamondTransition.gdshader" id="4_c3ro6"]
 [ext_resource type="Script" uid="uid://bu5gxdkpo7cbt" path="res://CrispGodotTemplate/Tests/InputTester.gd" id="6_mxd85"]
 
@@ -53,7 +52,6 @@ _data = {
 script = ExtResource("1_im8vk")
 
 [node name="MusicPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("2_pe8a6")
 
 [node name="InputTest" type="Node" parent="."]
 script = ExtResource("6_mxd85")

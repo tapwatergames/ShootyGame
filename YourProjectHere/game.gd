@@ -7,7 +7,4 @@ func _ready() -> void:
 	
 	
 func play(a,b)->void:
-	
-	$SfxrStreamPlayer.play()
-	
-	print("sss")
+	CrispGDUtility.end_game()
