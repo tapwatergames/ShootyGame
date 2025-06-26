@@ -65,8 +65,9 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("2_ntvbt")
 thumbnailTexture = ExtResource("1_mj5ko")
-titleText = "Game"
-descriptionText = "Gaming is awesome"
+titleText = "Shooty Booty"
+descriptionText = "press and hold to move, press left side of screen for locked aim, right side for unlocked aim
+"
 
 [node name="BackgroundPanel" type="Panel" parent="MainMenuUI"]
 layout_mode = 1
@@ -98,7 +99,7 @@ self_modulate = Color(0, 0, 0, 1)
 layout_mode = 2
 theme = ExtResource("1_60ktn")
 bbcode_enabled = true
-text = "[center]Game"
+text = "[center]Shooty Booty"
 fit_content = true
 
 [node name="MarginContainer" type="MarginContainer" parent="MainMenuUI/BackgroundPanel/MarginContainer/VBoxContainer"]
@@ -120,7 +121,8 @@ size_flags_vertical = 3
 theme = ExtResource("1_60ktn")
 theme_override_font_sizes/normal_font_size = 48
 bbcode_enabled = true
-text = "Gaming is awesome"
+text = "press and hold to move, press left side of screen for locked aim, right side for unlocked aim
+"
 fit_content = true
 
 [node name="HighScore" type="RichTextLabel" parent="MainMenuUI/BackgroundPanel/MarginContainer/VBoxContainer"]

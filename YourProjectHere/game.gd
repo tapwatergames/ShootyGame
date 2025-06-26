@@ -2,8 +2,7 @@ extends Node
 
 
 func _ready() -> void:
-	CrispGDInput.input_just_pressed.connect(play)
-	
+	pass
 	
 	
 func play(a,b)->void:

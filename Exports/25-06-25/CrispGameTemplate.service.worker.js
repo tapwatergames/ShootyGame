@@ -4,7 +4,7 @@
 // Incrementing CACHE_VERSION will kick off the install event and force
 // previously cached resources to be updated from the network.
 /** @type {string} */
-const CACHE_VERSION = '1750727428|221057593';
+const CACHE_VERSION = '1750897389|3963037354';
 /** @type {string} */
 const CACHE_PREFIX = 'CrispGameTemplat-sw-cache-';
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION;
