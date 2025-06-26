@@ -18,5 +18,5 @@ func _on_game_started()->void:
 func _on_game_ended()->void:
 	var tween: Tween  = get_tree().create_tween()
 	tween.tween_property(music_player,"volume_db",-64,1)
-	await  tween.finished
+	await tween.finished
 	music_player.stop()
