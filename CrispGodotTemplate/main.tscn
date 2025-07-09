@@ -66,7 +66,7 @@ grow_vertical = 2
 script = ExtResource("2_ntvbt")
 thumbnailTexture = ExtResource("1_mj5ko")
 mainColor = Color(0.982521, 0.706156, 0.796331, 1)
-titleText = "This is a change"
+titleText = "hello everyone"
 descriptionText = "press and hold to move, press left side of screen for locked aim, right side for unlocked aim
 "
 
@@ -101,7 +101,7 @@ self_modulate = Color(0, 0, 0, 1)
 layout_mode = 2
 theme = ExtResource("1_60ktn")
 bbcode_enabled = true
-text = "[center]This is a change"
+text = "[center]hello everyone"
 fit_content = true
 
 [node name="MarginContainer" type="MarginContainer" parent="MainMenuUI/BackgroundPanel/MarginContainer/VBoxContainer"]
