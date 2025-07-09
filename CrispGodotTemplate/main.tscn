@@ -65,11 +65,13 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("2_ntvbt")
 thumbnailTexture = ExtResource("1_mj5ko")
+mainColor = Color(0.982521, 0.706156, 0.796331, 1)
 titleText = "This is a change"
 descriptionText = "press and hold to move, press left side of screen for locked aim, right side for unlocked aim
 "
 
 [node name="BackgroundPanel" type="Panel" parent="MainMenuUI"]
+self_modulate = Color(0.982521, 0.706156, 0.796331, 1)
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
