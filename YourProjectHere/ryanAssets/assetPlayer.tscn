@@ -3,5 +3,6 @@
 [node name="Player" type="Node2D"]
 
 [node name="Line2D" type="Line2D" parent="."]
-points = PackedVector2Array(189, 168, 244, 55, 327, 84, 406, 46, 488, 156, 415, 293, 268, 299, 188, 172)
+position = Vector2(-341, -173)
+points = PackedVector2Array(189, 168, 244, 55, 669, -60, 406, 46, 488, 156, 415, 293, 268, 299, 188, 172)
 default_color = Color(0.964023, 0.411486, 0.780203, 1)
