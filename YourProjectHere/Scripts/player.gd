@@ -1,9 +1,13 @@
 extends Node2D
 
+var ryan_asset : PackedScene = preload("res://YourProjectHere/ryanAssets/assetPlayer.tscn")
+
 
 
 @export
 var movement_weight = 10.0
+
+#this is how quickly the player can rotate
 @export
 var rotation_weight = 5.0
 
@@ -22,7 +26,12 @@ func _ready() -> void:
 	CrispGDInput.input_just_pressed.connect(on_input_just_pressed)
 	CrispGDInput.input_released.connect(on_input_just_released)
 	CrispGDInput.input_pressed.connect(on_input_pressed)
+	call_deferred("setup_visuals")
 	
+
+func setup_visuals()->void:
+	var to_add = ryan_asset.instantiate()
+	add_child(to_add)
 
 func _physics_process(_delta: float) -> void:
 	last_position = position
