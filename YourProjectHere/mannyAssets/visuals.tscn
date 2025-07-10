@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://cy2r77lnqxstb"]
+
+[ext_resource type="Script" uid="uid://8v8ydfgnn2ra" path="res://YourProjectHere/Scripts/visuals.gd" id="1_7mx0u"]
+
+[sub_resource type="Curve" id="Curve_6y0n8"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.508197, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="Curve" id="Curve_s4h4h"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.922, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[node name="Visuals" type="Node2D"]
+script = ExtResource("1_7mx0u")
+enabled = true
+
+[node name="Body" type="Line2D" parent="."]
+unique_name_in_owner = true
+points = PackedVector2Array(0, -12, -14, 14, 14, 14, 0, -12)
+width_curve = SubResource("Curve_6y0n8")
+default_color = Color(0.857894, 0, 0.35503, 1)
+
+[node name="Disjointer" type="Node" parent="."]
+
+[node name="Trail" type="Line2D" parent="Disjointer"]
+unique_name_in_owner = true
+points = PackedVector2Array(258, 367, 258, 367, 258, 367, 258, 367, 258, 367, 258, 367, 258, 367, 258, 367, 258, 367, 258, 367, 258, 367, 258, 367, 258, 367, 258, 367, 258, 367, 258, 367, 258, 367, 258, 367, 258, 367, 258, 367, 258, 367, 258, 367, 258, 367, 258, 367, 258, 367, 258, 367, 258, 367, 258, 367, 258, 367, 258, 367)
+width_curve = SubResource("Curve_s4h4h")
