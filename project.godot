@@ -12,7 +12,6 @@ config_version=5
 
 config/name="CrispGameTemplate"
 run/main_scene="uid://cylpimnbxhptk"
-config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]
